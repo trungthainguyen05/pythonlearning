@@ -4,3 +4,23 @@ pyautogui
 
 mysql-connector-python
 
+minhdang2606
+
+
+pip install mysql-connector-python
+
+INSERT INTO `books`(`id`, `name`, `author`) VALUES ('5','Name','author')
+INSERT INTO `books`(`id`, `name`, `author`) VALUES ('6','Name','author')
+INSERT INTO `books`(`id`, `name`, `author`) VALUES ('7','Name','author')
+INSERT INTO `books`(`id`, `name`, `author`) VALUES ('8','Name','author')
+INSERT INTO `books`(`id`, `name`, `author`) VALUES ('9','Name','author')
+INSERT INTO `books`(`id`, `name`, `author`) VALUES ('10','Name','author')
+INSERT INTO `books`(`id`, `name`, `author`) VALUES ('11','Name','author')
+INSERT INTO `books`(`id`, `name`, `author`) VALUES ('12','Name','author')
+
+
+CREATE TABLE students (
+    id varchar(255),
+    name varchar(255),
+    yearr varchar(255)
+);

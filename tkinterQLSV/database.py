@@ -1,7 +1,17 @@
-path='F:\ProjectIT\py\\tkinterQLSV\QLSV.txt'
+import sys
+import os
+
+filename = os.path.dirname(sys.argv[0])
+currentPath = os.path.abspath(os.path.dirname(sys.argv[0]))
+
+fullCurrentPath = currentPath + '\QLSV.txt'
+# 'F:\ProjectIT\py\\tkinterQLSV\QLSV.txt'
+print('check path: ', fullCurrentPath)
+
+
 def save(line):
     try:
-        f=open(path,'w',encoding='utf8')
+        f = open(fullCurrentPath, 'a', encoding='utf8')
         f.writelines(line)
         f.writelines('\n')
         f.close()
@@ -9,12 +19,13 @@ def save(line):
         print('something wrong with save function')
         pass
 
+
 def read():
-    sv=[]
+    sv = []
     try:
-        f=open(path,'r',encoding='utf8')
+        f = open(fullCurrentPath, 'r', encoding='utf8')
         for i in f:
-            data=i.strip()
+            data = i.strip()
             arr = data.split('-')
             sv.append(arr)
         f.close()
@@ -22,5 +33,3 @@ def read():
     except:
         print('something wrong with read function')
         pass
-    
-
