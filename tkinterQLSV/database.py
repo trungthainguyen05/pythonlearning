@@ -2,7 +2,7 @@ import sys
 import os
 
 filename = os.path.dirname(sys.argv[0])
-currentPath = os.path.abspath(os.path.dirname(sys.argv[0]))
+currentPath = os.path.abspath(filename)
 
 fullCurrentPath = currentPath + '\QLSV.txt'
 # 'F:\ProjectIT\py\\tkinterQLSV\QLSV.txt'
