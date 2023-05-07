@@ -1,0 +1,24 @@
+content					1 collection -> ? img		
+id	name	collectionId	contentLink		1 collection -> ? content		
+1					1 collection -> ? product		
+2							
+3							
+							
+img							
+id	name	collectionId	imgLink				
+1							
+2							
+3							
+							
+collection							
+Id	name	description	productId				
+1	Trà gi?m cân	Trà gi?m cân vào mùa hè	1				
+2							
+3							
+							
+product							
+Id	name	category					
+1	Trà gi?m cân ban ?êm c?a ORIHIRO	Trà gi?m cân					
+2							
+3							
+							
